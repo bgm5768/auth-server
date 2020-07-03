@@ -1,0 +1,33 @@
+{
+  "name": "auth-server",
+  "version": "0.0.1",
+  "description": "user auth & manage role based on access controle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node src/app.js"
+  },
+  "keywords": [
+    "auth",
+    "jwt"
+  ],
+  "author": "bgm5768",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.2.3",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  }
+}
