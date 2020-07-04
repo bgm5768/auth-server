@@ -2,7 +2,7 @@ import { Sequelize, DataTypes } from 'sequelize';
 
 export default new Sequelize({
       dialect: 'sqlite',
-      storage: 'auth_databases/auth.db',
+      storage: './auth.db',
       logging: false
     }).define('users', {
       // Model attributes are defined here

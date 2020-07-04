@@ -4,19 +4,22 @@ const userModel = models.getUserModel();
 
 export default {
 
-    fetch : function(params) {
+    fetch : (params) => {
         return userModel.findAll();
     } ,
-    signup : function(params) {
-        // will hash
+    signup : (params) => {
         params.password_salt = '123456'
-        return userModel.create(params);
+        return userModel.create(...params);
     },
-    modify : function(params) {
+    modify : (params) => {
         console.log("userService modify!")
     } ,
-    delete : function(params) {
+    delete : (params) => {
         console.log("userService delete!")
     } ,
+
+    login : (params) => {
+
+    }
 
 }
