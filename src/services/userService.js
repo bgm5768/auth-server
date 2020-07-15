@@ -9,6 +9,19 @@ export default {
     } ,
     signup : (params) => {
         params.password_salt = '123456'
+
+        /*
+            will be user insert password hash logic add
+
+            auth.db . user table
+
+            user_id 
+            password
+            password_salt 
+
+
+         */
+
         return userModel.create(...params);
     },
     modify : (params) => {
